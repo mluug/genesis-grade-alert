@@ -52,7 +52,7 @@ def bot_polling():
 # recursive method for timed checking
 def check_grades_periodically():
     check_grades_update()
-    threading.Timer(6000, check_grades_periodically).start()
+    threading.Timer(30, check_grades_periodically).start()
 
 
 # start timed checking
